@@ -16,6 +16,7 @@
 <body>
   <div class="main">
     <h1>Expense Budget Tracker</h1>
+    <!-- Main container holding input forms and display -->
     <div class="budget-container row">
       <div class="add-container col-4">
         <div class="add-budget-container">
@@ -28,6 +29,7 @@
             <button class="btn btn-primary form-control">Add Budget</button>
           </form>
         </div>
+        <!-- Expense input form -->
         <div class="add-expense-container mt-4">
           <h4>Add Expense</h4>
           <form>
@@ -42,10 +44,12 @@
             <button class="btn btn-primary form-control">Add Expense</button>
           </form>
         </div>
+        <!-- Reset button -->
         <button class="btn btn-danger form-control mt-2" onclick="resetAll()">Reset All</button>
       </div>
-
+      <!-- Right column: Budget summary and expense table -->
       <div class="display-container">
+        <!-- Budget summary cards -->
         <div class="heading row" style="display: flex; justify-content: space-around;">
           <div class="alert alert-primary" role="alert">
             Total Budget: <span id="totalBudget">100</span>
@@ -58,6 +62,7 @@
           </div>
         </div>
         <hr>
+        <!-- Expense history table -->
         <div class="table-container table-responsive">
           <h5>Expense History:</h5>
           <table class="table">
