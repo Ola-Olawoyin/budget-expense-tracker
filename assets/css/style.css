@@ -36,3 +36,18 @@ body {
   background-color: #ffffff99;
   padding: 40px;
 }
+
+.add-budget-container, .add-expense-container {
+    box-shadow: #ffffff62 0px 3px 8px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff83;
+}
+
+.display-container {
+    box-shadow: #ffffff62 0px 3px 8px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff83;
+    width: 65%;
+}
