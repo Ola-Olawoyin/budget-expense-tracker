@@ -1,7 +1,6 @@
-function addBudget(params) {}
-
-function addExpense(params) {}
-
-function resetAll(params) {}
-
-function removeExpense(params) {}
+let budgetData = JSON.parse(localStorage.getItem("budgetData")) || {
+    totalBudget: 0,
+    totalExpenses: 0,
+    budgetLeft: 0,
+    expenses: []
+};
