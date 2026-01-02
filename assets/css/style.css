@@ -1,11 +1,14 @@
+/* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
+/* Reset default styles */
 * {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
 }
 
+/* Background gradient */
 body {
   background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
   background-size: cover;
@@ -13,6 +16,7 @@ body {
   background-repeat: no-repeat;
 }
 
+/* Main container centering */
 .main {
   display: flex;
   flex-direction: column;
@@ -22,6 +26,7 @@ body {
   padding-top: 30px;
 }
 
+/* Page title */
 .main > h1 {
   color: #646464;
   font-weight: bold;
@@ -29,6 +34,7 @@ body {
   font-size: 55px;
 }
 
+/* Main content container */
 .budget-container {
   height: auto;
   width: 85%;
@@ -38,6 +44,7 @@ body {
   padding: 40px;
 }
 
+/* Input form container */
 .add-budget-container, .add-expense-container {
     box-shadow: #ffffff62 0px 3px 8px;
     padding: 20px;
@@ -45,6 +52,7 @@ body {
     background-color: #ffffff83;
 }
 
+/* Display area for budget summary and table */
 .display-container {
     box-shadow: #ffffff62 0px 3px 8px;
     padding: 20px;
@@ -53,8 +61,8 @@ body {
     width: 65%;
 }
 
+/* Table and mobile responsiveness */
 @media screen and (max-width: 768px) {
- 
   .main {
   height: auto;
   padding-top: 20px 0;
