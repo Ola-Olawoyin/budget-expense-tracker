@@ -36,3 +36,24 @@ function resetAll(){
     updateLocalStorage();
     updateUI();
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+   updateUI()
+   
+   document.querySelector('.add-budget-container form').addEventListener('submit', function(event){
+    event.preventDefault();
+    let budgetInput = document.getElementById('budget');
+    let budgetAmount = parseInt(budgetInput.ariaValueMax.trim());
+
+    if(isNaN(budgetAmount) || budgetAmount <= 0) {
+        alert('Please enter a valid budget amount!')
+        return;
+    }
+
+    budgetData.totalBudget = budgetAmount;
+    budgetData.budgetLeft = budgetAmount;
+    updateLocalStorage();
+    updateUI();
+    budgetInput.value = '';
+   })
+})
