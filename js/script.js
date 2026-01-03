@@ -22,3 +22,17 @@ function updateUI() {
         tableBody.appendChild(row)
     });
 }
+
+function updateLocalStorage(){
+    localStorage.setItem("budgetData", JSON.stringify(budgetData));
+}
+
+function resetAll(){
+    budgetData.totalBudget = 0;
+    budgetData.totalExpenses = 0;
+    budgetData.budgetLeft = 0;
+    budgetData.expenses = []
+
+    updateLocalStorage();
+    updateUI();
+}
