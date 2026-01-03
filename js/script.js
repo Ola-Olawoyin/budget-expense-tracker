@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
     budgetInput.value = '';
    })
 
-   document.querySelector('.add-budget-container form').addEventListener('submit', function(event){
+   document.querySelector('.add-expense-container form').addEventListener('submit', function(event){
    event.preventDefault();
     let expenseInput = document.getElementById('expense');
     let amountInput = document.getElementById('amount');
