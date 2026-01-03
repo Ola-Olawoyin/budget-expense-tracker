@@ -7,10 +7,10 @@ let budgetData = JSON.parse(localStorage.getItem("budgetData")) || {
 
 function updateUI() {
     document.getElementById('totalBudget').textContent = budgetData.totalBudget.toFixed(2);
-    document.getElementById('totalExpenses').textContent = budgetData.totalExpenses.toFixed(2);
+    document.getElementById('totalExpense').textContent = budgetData.totalExpenses.toFixed(2);
     document.getElementById('budgetLeft').textContent = budgetData.budgetLeft.toFixed(2);
 
-    let tableBody = document.querySelector('table-container tbody');
+    let tableBody = document.querySelector('.table-container tbody');
     tableBody.innerHTML = '';
     budgetData.expenses.forEach(function (expense) {
          let row = document.createElement('tr');
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     budgetData.totalBudget = budgetAmount;
-    budgetData.budgetLeft = budgetAmount;
+    budgetData.budgetLeft = budgetAmount - budgetData.totalExpenses;
     updateLocalStorage();
     updateUI();
     budgetInput.value = '';
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
        return;
     }
 
-    budgetData.expense.push({
+    budgetData.expenses.push({
         title: expenseTitle,
         amount: expenseAmount
     });
