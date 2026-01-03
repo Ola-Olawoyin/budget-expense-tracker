@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
    document.querySelector('.add-budget-container form').addEventListener('submit', function(event){
     event.preventDefault();
     let budgetInput = document.getElementById('budget');
-    let budgetAmount = parseFloat(budgetInput.ariaValueMax.trim());
+    let budgetAmount = parseFloat(budgetInput.value.trim());
 
     if(isNaN(budgetAmount) || budgetAmount <= 0) {
         alert('Please enter a valid budget amount!')
@@ -55,5 +55,19 @@ document.addEventListener("DOMContentLoaded", function () {
     updateLocalStorage();
     updateUI();
     budgetInput.value = '';
+   })
+
+   document.querySelector('.add-budget-container form').addEventListener('submit', function(event){
+   event.preventDefault();
+    let expenseInput = document.getElementById('expense');
+    let amountInput = document.getElementById('amount');
+
+     let expenseTitle = expenseInput.value.trim();
+    let expenseAmount = parseFloat(amountInput.value.trim());
+
+    if(expenseTitle === '' || isNaN(expenseAmount) || expenseAmount <= 0) {
+       alert('Please enter a valid expense!');
+       return;
+    }
    })
 })
