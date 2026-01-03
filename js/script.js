@@ -69,5 +69,19 @@ document.addEventListener("DOMContentLoaded", function () {
        alert('Please enter a valid expense!');
        return;
     }
-   })
+
+    budgetData.expense.push({
+        title: expenseTitle,
+        amount: expenseAmount
+    });
+
+    budgetData.totalExpenses += expenseAmount;
+    budgetData.budgetLeft -= expenseAmount;
+
+    updateLocalStorage();
+    updateUI();
+
+    expenseInput.value = '';
+    amountInput.value = '';
+   });
 })
