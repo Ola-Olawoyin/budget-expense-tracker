@@ -84,4 +84,14 @@ document.addEventListener("DOMContentLoaded", function () {
     expenseInput.value = '';
     amountInput.value = '';
    });
+   document.querySelector('.table-container').addEventListener('click', function (event) {
+    if (event.target && event.target.matches("button.btn-danger")) {
+        let rowIndex = event.target.closest('tr').rowIndex - 1;
+        let removedExpense = budgetData.expenses.splice(rowIndex, 1)[0];
+        budgetData.totalExpenses -= removedExpense.amount;
+        budgetData.budgetLeft += removedExpense.amount;
+        updateLocalStorage();
+        updateUI();
+    }
+   })
 })
