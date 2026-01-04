@@ -4,10 +4,16 @@ let budgetData = JSON.parse(localStorage.getItem('budgetData')) || {
     totalExpenses: 0,
     budgetLeft: 0,
     expenses: [],
+    currency: '£'
 };
 
 //Update UI with current budget data
 function updateUI() {
+    //Update currency symbols
+    document.getElementById('currencySymbol1').textContent = budgetData.currency;
+    document.getElementById('currencySymbol2').textContent = budgetData.currency;
+    document.getElementById('currencySymbol3').textContent = budgetData.currency;
+    document.getElementById('currencySymbol4').textContent = budgetData.currency;
     //Update summary displays
     document.getElementById('totalBudget').textContent =
         budgetData.totalBudget.toFixed(2);
@@ -50,6 +56,21 @@ function resetAll() {
 
 //Initialise app when page is loaded
 document.addEventListener('DOMContentLoaded', function () {
+    //Set initial currency radio button
+    document.querySelectorAll('input[name="currency"]').forEach(radio => {
+        if (radio.value === budgetData.currency) {
+            radio.checked =true;
+        }
+    });
+
+    //Currency change event listener
+    document.querySelectorAll('input[name="currency"]').forEach(radio => {
+        radio.addEventListener('change', function () {
+          budgetData.currency = this.value;
+          updateLocalStorage();
+          updateUI();  
+        })
+    })
     updateUI();
 
     //Handle budget form submission
