@@ -18,6 +18,24 @@
   <body>
     <div class="main">
       <h1>Expense Budget Tracker</h1>
+      <!-- Currency Selection -->
+       <div class="currency-selector">
+        <label class="currency-label">Select Currency:</label>
+        <div class="currency-options">
+          <label class="currency-option">
+            <input type="radio" name="currency" value="£" checked>
+            <span>GBP (£)</span>
+          </label>
+          <label class="currency-option">
+           <input type="radio" name="currency" value="$" >
+            <span>USD ($)</span> 
+          </label>
+          <label class="currency-option">
+           <input type="radio" name="currency" value="€" >
+            <span>EUR (€)</span> 
+          </label>
+        </div>
+       </div>
       <!-- Main container holding input forms and display -->
       <div class="budget-container row">
         <div class="add-container col-4">
@@ -59,13 +77,13 @@
             style="display: flex; justify-content: space-around"
           >
             <div class="alert alert-primary" role="alert">
-              Total Budget: <span id="totalBudget">100</span>
+              Total Budget: <span id="currencySymbol1">£</span><span id="totalBudget">100</span>
             </div>
             <div class="alert alert-primary" role="alert">
-              Total Expense: <span id="totalExpense">100</span>
+              Total Expense: <span id="currencySymbol2">£</span><span id="totalExpense">100</span>
             </div>
             <div class="alert alert-primary" role="alert">
-              Budget Left: <span id="budgetLeft">100</span>
+              Budget Left: <span id="currencySymbol3">£</span><span id="budgetLeft">100</span>
             </div>
           </div>
           <hr />
@@ -76,7 +94,7 @@
               <thead>
                 <tr>
                   <th scope="col">Expense Name</th>
-                  <th scope="col">Amount</th>
+                  <th scope="col">Amount (<span id="currencySymbol4">£</span>)</th>
                   <th scope="col">Action</th>
                 </tr>
               </thead>
