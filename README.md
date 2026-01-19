@@ -1,3 +1,16 @@
+## Target Audience
+
+This budget expense tracker is designed for individuals who want a simple, straightforward way to manage their personal finances. It's ideal for:
+
+- **Students** tracking their monthly allowances and educational expenses
+- **Young professionals** managing their first salary and building healthy spending habits
+- **Freelancers** monitoring project-based income and business expenses
+- **Budget-conscious individuals** looking to control spending and save money
+- **International users** who need to track finances in GBP, USD, or EUR
+- **Anyone seeking a lightweight, browser-based solution** without the complexity of full accounting software
+
+The application is particularly suited for users who prefer immediate access without registration, value data privacy (with local storage), and need a clean, distraction-free interface for everyday expense tracking.
+
 ## User Story
 
 # Currency Selection
