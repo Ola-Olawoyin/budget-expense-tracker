@@ -1,3 +1,21 @@
+//Custom alert function that auto-dismisses after 5 seconds
+function showCustomAlert(message, type = 'success') {
+    const alertBox = document.getElementById('customAlert');
+    alertBox.textContent = message;
+    alertBox.className = 'custom-alert show';
+    
+    if (type === 'error') {
+        alertBox.classList.add('error');
+    } else if (type === 'warning') {
+        alertBox.classList.add('warning');
+    }
+    
+    //Auto-dismiss after 5 seconds
+    setTimeout(() => {
+        alertBox.classList.remove('show');
+    }, 5000);
+}
+
 //Load budget data from localStorage or initialise defaults
 let budgetData = JSON.parse(localStorage.getItem('budgetData')) || {
     totalBudget: 0,
@@ -43,15 +61,18 @@ function updateLocalStorage() {
 
 //Reset all budget data
 function resetAll() {
-    //Clear all data
-    budgetData.totalBudget = 0;
-    budgetData.totalExpenses = 0;
-    budgetData.budgetLeft = 0;
-    budgetData.expenses = [];
+    if (confirm('Are you sure you want to reset all data? This action cannot be undone.')) {
+        //Clear all data
+        budgetData.totalBudget = 0;
+        budgetData.totalExpenses = 0;
+        budgetData.budgetLeft = 0;
+        budgetData.expenses = [];
 
-    //Save and refresh display
-    updateLocalStorage();
-    updateUI();
+        //Save and refresh display
+        updateLocalStorage();
+        updateUI();
+        showCustomAlert('All data has been reset successfully!', 'warning');
+    }
 }
 
 //Initialise app when page is loaded
@@ -83,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             //Validate budget input
             if (isNaN(budgetAmount) || budgetAmount <= 0) {
-                alert('Please enter a valid budget amount!');
+                showCustomAlert('Please enter a valid budget amount!', 'error');
                 return;
             }
 
@@ -92,6 +113,7 @@ document.addEventListener('DOMContentLoaded', function () {
             updateLocalStorage();
             updateUI();
             budgetInput.value = '';
+            showCustomAlert('Budget added successfully!');
         });
 
     //Handle expense form submission
@@ -107,7 +129,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             //Validate expense input
             if (expenseTitle === '' || isNaN(expenseAmount) || expenseAmount <= 0) {
-                alert('Please enter a valid expense!');
+                showCustomAlert('Please enter a valid expense!', 'error');
                 return;
             }
 
@@ -127,6 +149,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             expenseInput.value = '';
             amountInput.value = '';
+            showCustomAlert('Expense added successfully!');
         });
 
     //Handle remove expense button clicks

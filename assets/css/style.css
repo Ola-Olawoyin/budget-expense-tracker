@@ -124,6 +124,38 @@ input:-ms-input-placeholder {
   font-style: italic;
 }
 
+/* Custom Alert Styles */
+.custom-alert {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 15px 25px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  font-weight: 500;
+  z-index: 9999;
+  opacity: 0;
+  transform: translateX(400px);
+  transition: all 0.3s ease;
+}
+
+.custom-alert.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.custom-alert.error {
+  background-color: #dc3545;
+}
+
+.custom-alert.warning {
+  background-color: #ffc107;
+  color: #333;
+}
+
 /* Display area for budget summary and table */
 .display-container {
   box-shadow: #ffffff62 0px 3px 8px;
