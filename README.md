@@ -1,37 +1,42 @@
 ## User Story
 
-# Budget Section
+# Currency Selection
 As a user,
-I want to set a budget amount and specify the currency (GBP, USD, or EUR),
-So that my financial planning aligns with my preferred currency.
+I want to select my preferred currency (GBP, USD, or EUR) for my budget tracker,
+So that all my financial data is displayed in my chosen currency.
 
-# Expense Section
+# Set Budget
 As a user,
-I want to input expenses along with their respective currencies (GBP, USD, or EUR),
-So that I can track international or mixed-currency spending accurately.
+I want to set a budget amount in my selected currency,
+So that I can establish a spending limit and track my finances effectively.
 
-# Currency Conversion
+# Add Expense
 As a user,
-I want the system to automatically convert different currencies to a base currency (e.g., GBP),
-So that I can see a consistent total and balance regardless of expense origin.
+I want to add expenses with a title and amount in my selected currency,
+So that I can record all my spending in one place.
 
-# Budget display
+# Budget Overview
 As a user,
-I want to see the total budget, total expenses, and remaining budget in one consistent currency,
-So that I can easily interpret my financial standing.
+I want to see the total budget, total expenses, and remaining budget at a glance,
+So that I can quickly understand my current financial position.
 
 # Expense History
 As a user,
-I want to view each expense entry with its title and converted amount in the base currency,
-So that I understand the actual value of each expense in the context of my budget.
+I want to view a detailed history of all my expenses with their titles and amounts,
+So that I can review my spending patterns and track where my money goes.
 
-# Edit Expense
+# Remove Expense
 As a user,
-I want to edit a specific expense from the list of expenses,
-So that I can correct mistakes or adjust my records.
+I want to delete specific expenses from my history,
+So that I can remove incorrect entries or expenses I no longer need to track.
 
-# Delete Expense
+# Reset All Data
 As a user,
-I want to delete a specific expense from my history,
-So that I can remove the unwanted expense from the record.
+I want to reset all my budget and expense data,
+So that I can start fresh with a clean slate when needed.
+
+# Data Persistence
+As a user,
+I want my budget and expense data to be saved automatically,
+So that I don't lose my information when I close and reopen the application.
 
