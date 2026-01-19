@@ -103,6 +103,26 @@ currency-option span {
   border-radius: 10px;
   background-color: #ffffff83;
 }
+/* Placeholder text styling */
+input::placeholder {
+  color: #bdbdbd;
+  font-style: italic;
+}
+
+input::-webkit-input-placeholder {
+  color: #bdbdbd;
+  font-style: italic;
+}
+
+input::-moz-placeholder {
+  color: #bdbdbd;
+  font-style: italic;
+}
+
+input:-ms-input-placeholder {
+  color: #bdbdbd;
+  font-style: italic;
+}
 
 /* Display area for budget summary and table */
 .display-container {
