@@ -81,3 +81,30 @@ Manual testing has been chosen for the Budget Expense Tracker project due to its
 Manual testing allows for quicker validation of features, flexibility in exploring edge cases, and effective verification of user flows without additional tooling overhead. It is particularly suitable for validating usability, data accuracy, and overall behaviour during the early and final stages of development.
 
 Given the project’s size, timeline, and objectives, manual testing provides a practical and efficient approach to ensuring quality while keeping development and testing costs realistic.
+
+
+# Manual Test Cases – Budget Expense Tracker
+
+## 1. Currency Selection
+
+| Test Case ID | Test Scenario | Test Steps | Expected Result | Actual Result | Remarks |
+|-------------|---------------|------------|----------------|---------------|---------|
+| CUR-01 | Select GBP | Open app → Select GBP | All amounts display with £ | | |
+| CUR-02 | Select USD | Change currency to USD | All amounts display with $ | | |
+| CUR-03 | Select EUR | Change currency to EUR | All amounts display with € | | |
+| CUR-04 | Change currency after setting budget | Set budget → Switch currency | Numeric value unchanged, symbol updates | | |
+| CUR-05 | Currency persistence | Refresh page | Selected currency persists | | |
+
+---
+
+## 2. Set Budget
+
+| Test Case ID | Test Scenario | Test Steps | Expected Result | Actual Result | Remarks |
+|-------------|---------------|------------|----------------|---------------|---------|
+| BUD-01 | Set valid budget | Enter valid amount | Budget saved and displayed | | |
+| BUD-02 | Decimal budget | Enter 250.75 | Decimal accepted | | |
+| BUD-03 | Zero budget | Enter 0 | Validation error shown | | |
+| BUD-04 | Negative budget | Enter -100 | Budget not accepted | | |
+| BUD-05 | Update budget | Modify existing budget | Budget updates correctly | | |
+
+---
