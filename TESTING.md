@@ -162,4 +162,22 @@ Given the project’s size, timeline, and objectives, manual testing provides a 
 
 ---
 
+## 8. Data Persistence
 
+| Test Case ID | Test Scenario | Test Steps | Expected Result | Actual Result | Remarks |
+|-------------|---------------|------------|----------------|---------------|---------|
+| PER-01 | Auto-save | Add budget and expenses | Data saved automatically | | |
+| PER-02 | Reopen app | Close and reopen app | Data restored | | |
+| PER-03 | Currency persistence | Change currency → reload | Currency retained | | |
+
+---
+
+## 9. Responsiveness Testing
+
+| Test Case ID | Device | Test Steps | Expected Result | Actual Result | Remarks |
+|-------------|--------|------------|----------------|---------------|---------|
+| RES-UI-01 | Desktop | Open app | Layout displays correctly | | |
+| RES-UI-02 | Tablet | Resize to tablet width | No overlap or cutoff | | |
+| RES-UI-03 | Mobile | Resize to mobile width | Readable stacked layout | | |
+| RES-UI-04 | Mobile interaction | Tap buttons | Buttons are clickable | | |
+| RES-UI-05 | Window resize | Resize browser | UI adjusts smoothly | | |
