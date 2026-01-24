@@ -108,3 +108,27 @@ Given the project’s size, timeline, and objectives, manual testing provides a 
 | BUD-05 | Update budget | Modify existing budget | Budget updates correctly | | |
 
 ---
+
+## 3. Add Expense
+
+| Test Case ID | Test Scenario | Test Steps | Expected Result | Actual Result | Remarks |
+|-------------|---------------|------------|----------------|---------------|---------|
+| EXP-01 | Add valid expense | Enter title and amount | Expense added successfully | | |
+| EXP-02 | Empty title | Leave title blank | Validation error shown | | |
+| EXP-03 | Negative amount | Enter -50 | Expense not added | | |
+| EXP-04 | Expense exceeds budget | Add high expense | Warning shown or negative balance | | |
+| EXP-05 | Multiple expenses | Add several expenses | All displayed in history | | |
+
+---
+
+## 4. Budget Overview
+
+| Test Case ID | Test Scenario | Test Steps | Expected Result | Actual Result | Remarks |
+|-------------|---------------|------------|----------------|---------------|---------|
+| OVR-01 | Budget only | Set budget | Expenses = 0, remaining = budget | | |
+| OVR-02 | With expenses | Add expenses | Totals update correctly | | |
+| OVR-03 | After deletion | Delete an expense | Totals recalculate | | |
+| OVR-04 | Currency change | Switch currency | Currency symbols update | | |
+
+---
+
