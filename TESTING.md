@@ -132,3 +132,34 @@ Given the project’s size, timeline, and objectives, manual testing provides a 
 
 ---
 
+## 5. Expense History
+
+| Test Case ID | Test Scenario | Test Steps | Expected Result | Actual Result | Remarks |
+|-------------|---------------|------------|----------------|---------------|---------|
+| HIS-01 | View history | Add multiple expenses | All expenses listed | | |
+| HIS-02 | Persistence | Refresh page | History persists | | |
+| HIS-03 | Expense order | Add expenses | Correct order displayed | | |
+
+---
+
+## 6. Remove Expense
+
+| Test Case ID | Test Scenario | Test Steps | Expected Result | Actual Result | Remarks |
+|-------------|---------------|------------|----------------|---------------|---------|
+| DEL-01 | Delete expense | Click delete | Expense removed | | |
+| DEL-02 | Update overview | Delete expense | Totals update | | |
+| DEL-03 | Delete last expense | Remove final item | Expense list empty | | |
+
+---
+
+## 7. Reset All Data
+
+| Test Case ID | Test Scenario | Test Steps | Expected Result | Actual Result | Remarks |
+|-------------|---------------|------------|----------------|---------------|---------|
+| RES-01 | Reset data | Click Reset | Budget and expenses cleared | | |
+| RES-02 | Persistence after reset | Refresh page | Data remains cleared | | |
+| RES-03 | Reset confirmation | Click Reset | Confirmation shown (if implemented) | | |
+
+---
+
+
