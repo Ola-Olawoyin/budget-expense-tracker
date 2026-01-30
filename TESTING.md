@@ -114,6 +114,7 @@ Given the project’s size, timeline, and objectives, manual testing provides a 
 ![before add valid budget](documentation/before-add-budget.png)
 ![after add valid budget](documentation/confirm-add-budget.png)
 ![add decimal budget](documentation/add-decimal-budget.png)
+![before add zero budget](documentation/add-zero-budget.png.png)
 ![add negative budget](documentation/add-negative-budget.png)
 ![before modify budget](documentation/before-modify-budget.png)
 ![after modify budget](documentation/after-modify-budget.png)
@@ -126,8 +127,14 @@ Given the project’s size, timeline, and objectives, manual testing provides a 
 | EXP-01 | Add valid expense | Enter title and amount | Expense added successfully | | |
 | EXP-02 | Empty title | Leave title blank | Validation error shown | | |
 | EXP-03 | Negative amount | Enter -50 | Expense not added | | |
-| EXP-04 | Expense exceeds budget | Add high expense | Warning shown or negative balance | | |
+| EXP-04 | Expense exceeds budget | Add high expense | negative balance | | |
 | EXP-05 | Multiple expenses | Add several expenses | All displayed in history | | |
+
+![add valid expense](documentation/add-valid-expense.png)
+![add blank title expense](documentation/no-title-expense.png)
+![add negative expense](documentation/add-negative-expense.png)
+![add high expense](documentation/add-high-expense.png)
+![add multiple expenses](documentation/add-multiple-expense.png)
 
 ---
 
