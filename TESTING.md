@@ -94,7 +94,9 @@ Given the project’s size, timeline, and objectives, manual testing provides a 
 | CUR-03 | Select EUR | Change currency to EUR | All amounts display with € | | |
 | CUR-04 | Change currency after setting budget | Set budget → Switch currency | Numeric value unchanged, symbol updates | | |
 | CUR-05 | Currency persistence | Refresh page | Selected currency persists | | |
-
+![select pound as currency by default](documentation/select-pounds.png)
+![select dollar as currency](documentation/select-dollar.png)
+![select euro as currency](documentation/select-euro.png)
 ---
 
 ## 2. Set Budget
