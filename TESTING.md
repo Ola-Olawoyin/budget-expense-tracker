@@ -202,7 +202,7 @@ Given the project’s size, timeline, and objectives, manual testing provides a 
 | PER-02 | Reopen app | Close and reopen app | Data restored| | |
 | PER-03 | Currency persistence | Change currency → reload | Currency retained| | |
 
-
+![data percisitence](documentation/data-persistence.mp4)
 
 ---
 
