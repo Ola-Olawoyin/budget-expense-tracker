@@ -122,7 +122,6 @@ Given the project’s size, timeline, and objectives, manual testing provides a 
 
 ## 3. Add Expense
 
-<<<<<<< HEAD
 | Test Case ID | Test Scenario | Test Steps | Expected Result | Actual Result | Remarks |
 |-------------|---------------|------------|----------------|---------------|---------|
 | EXP-01 | Add valid expense | Enter title and amount | Expense added successfully | | |
@@ -130,14 +129,6 @@ Given the project’s size, timeline, and objectives, manual testing provides a 
 | EXP-03 | Negative amount | Enter -50 | Expense not added | | |
 | EXP-04 | Expense exceeds budget | Add high expense | negative balance | | |
 | EXP-05 | Multiple expenses | Add several expenses | All displayed in history | | |
-=======
-| Test Case ID | Test Scenario | Test Steps | Expected Result |
-|-------------|---------------|------------|----------------|
-| EXP-01 | Add valid expense | Enter title and amount | Expense added successfully| EXP-02 | Empty title | Leave title blank | Validation error shown|
-| EXP-03 | Negative amount | Enter -50 | Expense not added|
-| EXP-04 | Expense exceeds budget | Add high expense | Warning shown or negative balance|
-| EXP-05 | Multiple expenses | Add several expenses | All displayed in history|
->>>>>>> 10a085a9d26179c638cfc6b886aca72b540e8a0f
 
 ![add valid expense](documentation/add-valid-expense.png)
 ![add blank title expense](documentation/no-title-expense.png)
