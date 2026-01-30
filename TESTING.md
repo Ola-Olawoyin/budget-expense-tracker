@@ -114,6 +114,9 @@ Given the project’s size, timeline, and objectives, manual testing provides a 
 ![before add valid budget](documentation/before-add-budget.png)
 ![after add valid budget](documentation/confirm-add-budget.png)
 ![add decimal budget](documentation/add-decimal-budget.png)
+![add negative budget](documentation/add-negative-budget.png)
+![before modify budget](documentation/before-modify-budget.png)
+![after modify budget](documentation/after-modify-budget.png)
 ---
 
 ## 3. Add Expense
