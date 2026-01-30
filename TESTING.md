@@ -94,9 +94,11 @@ Given the project’s size, timeline, and objectives, manual testing provides a 
 | CUR-03 | Select EUR | Change currency to EUR | All amounts display with € | | |
 | CUR-04 | Change currency after setting budget | Set budget → Switch currency | Numeric value unchanged, symbol updates | | |
 | CUR-05 | Currency persistence | Refresh page | Selected currency persists | | |
+
 ![select pound as currency by default](documentation/select-pounds.png)
 ![select dollar as currency](documentation/select-dollar.png)
 ![select euro as currency](documentation/select-euro.png)
+
 ---
 
 ## 2. Set Budget
@@ -109,6 +111,9 @@ Given the project’s size, timeline, and objectives, manual testing provides a 
 | BUD-04 | Negative budget | Enter -100 | Budget not accepted | | |
 | BUD-05 | Update budget | Modify existing budget | Budget updates correctly | | |
 
+![before add valid budget](documentation/before-add-budget.png)
+![after add valid budget](documentation/confirm-add-budget.png)
+![add decimal budget](documentation/add-decimal-budget.png)
 ---
 
 ## 3. Add Expense
