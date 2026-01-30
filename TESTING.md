@@ -215,3 +215,7 @@ Given the project’s size, timeline, and objectives, manual testing provides a 
 | RES-UI-03 | Mobile | Resize to mobile width | Readable stacked layout| | |
 | RES-UI-04 | Mobile interaction | Tap buttons | Buttons are clickable| | |
 | RES-UI-05 | Window resize | Resize browser | UI adjusts smoothly| | |
+
+![desktop view](documentation/desktop-view.png)
+![tablet view](documentation/tablet-view.png)
+![mobile views](documentation/mobile-views.png)
