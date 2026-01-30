@@ -220,3 +220,4 @@ Given the project’s size, timeline, and objectives, manual testing provides a 
 ![tablet view](documentation/tablet-view.png)
 ![mobile views](documentation/mobile-views.png)
 ![mobile interaction](documentation/mobile-interaction.mp4)
+![browser resize](documentation/resize-browser.mp4)
