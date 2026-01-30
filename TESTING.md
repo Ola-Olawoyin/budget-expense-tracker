@@ -87,13 +87,13 @@ Given the project’s size, timeline, and objectives, manual testing provides a 
 
 ## 1. Currency Selection
 
-| Test Case ID | Test Scenario | Test Steps | Expected Result |
-|-------------|---------------|------------|----------------|
-| CUR-01 | Select GBP | Open app → Select GBP | All amounts display with £ |
-| CUR-02 | Select USD | Change currency to USD | All amounts display with $ |
-| CUR-03 | Select EUR | Change currency to EUR | All amounts display with € |
-| CUR-04 | Change currency after setting budget | Set budget → Switch currency | Numeric value unchanged, symbol updates |
-| CUR-05 | Currency persistence | Refresh page | Selected currency persists |
+| Test Case ID | Test Scenario | Test Steps | Expected Result | Actual Result | Remarks |
+|-------------|---------------|------------|----------------|---------------|---------|
+| CUR-01 | Select GBP | Open app → Select GBP | All amounts display with £ | | |
+| CUR-02 | Select USD | Change currency to USD | All amounts display with $ | | |
+| CUR-03 | Select EUR | Change currency to EUR | All amounts display with € | | |
+| CUR-04 | Change currency after setting budget | Set budget → Switch currency | Numeric value unchanged, symbol updates | | |
+| CUR-05 | Currency persistence | Refresh page | Selected currency persists | | |
 
 ![select pound as currency by default](documentation/select-pounds.png)
 ![select dollar as currency](documentation/select-dollar.png)
@@ -103,13 +103,13 @@ Given the project’s size, timeline, and objectives, manual testing provides a 
 
 ## 2. Set Budget
 
-| Test Case ID | Test Scenario | Test Steps | Expected Result |
-|-------------|---------------|------------|----------------|
-| BUD-01 | Set valid budget | Enter valid amount | Budget saved and displayed |
-| BUD-02 | Decimal budget | Enter 250.75 | Decimal accepted |
-| BUD-03 | Zero budget | Enter 0 | Validation error shown |
-| BUD-04 | Negative budget | Enter -100 | Budget not accepted |
-| BUD-05 | Update budget | Modify existing budget | Budget updates correctly |
+| Test Case ID | Test Scenario | Test Steps | Expected Result | Actual Result | Remarks |
+|-------------|---------------|------------|----------------|---------------|---------|
+| BUD-01 | Set valid budget | Enter valid amount | Budget saved and displayed | | |
+| BUD-02 | Decimal budget | Enter 250.75 | Decimal accepted | | |
+| BUD-03 | Zero budget | Enter 0 | Validation error shown | | |
+| BUD-04 | Negative budget | Enter -100 | Budget not accepted | | |
+| BUD-05 | Update budget | Modify existing budget | Budget updates correctly | | |
 
 ![before add valid budget](documentation/before-add-budget.png)
 ![after add valid budget](documentation/confirm-add-budget.png)
@@ -140,61 +140,78 @@ Given the project’s size, timeline, and objectives, manual testing provides a 
 
 ## 4. Budget Overview
 
-| Test Case ID | Test Scenario | Test Steps | Expected Result |
-|-------------|---------------|------------|----------------|
-| OVR-01 | Budget only | Set budget | Expenses = 0, remaining = budget|
-| OVR-02 | With expenses | Add expenses | Totals update correctly|
-| OVR-03 | After deletion | Delete an expense | Totals recalculate|
-| OVR-04 | Currency change | Switch currency | Currency symbols update|
+| Test Case ID | Test Scenario | Test Steps | Expected Result | Actual Result | Remarks |
+|-------------|---------------|------------|----------------|---------------|---------|
+| OVR-01 | Budget only | Set budget | Expenses = 0, remaining = budget| | |
+| OVR-02 | With expenses | Add expenses | Totals update correctly| | |
+| OVR-03 | After deletion | Delete an expense | Totals recalculate| | |
+| OVR-04 | Currency change | Switch currency | Currency symbols update| | |
+
+![add budget only overview](documentation/add-budget-only-overview.png)
+![add budget expense overview](documentation/add-budget-expense-overview.png)
+![before remove expenses overview](documentation/add-expenses-overview.png)
+![after remove expenses overview](documentation/remove-expense-overview.png)
+![switch currency overview](documentation/switch-currency-overview.png)
 
 ---
 
 ## 5. Expense History
 
-| Test Case ID | Test Scenario | Test Steps | Expected Result |
-|-------------|---------------|------------|----------------|
-| HIS-01 | View history | Add multiple expenses | All expenses listed|
-| HIS-02 | Persistence | Refresh page | History persists|
-| HIS-03 | Expense order | Add expenses | Correct order displayed|
+| Test Case ID | Test Scenario | Test Steps | Expected Result | Actual Result | Remarks |
+|-------------|---------------|------------|----------------|---------------|---------|
+| HIS-01 | View history | Add multiple expenses | All expenses listed| | |
+| HIS-02 | Persistence | Refresh page | History persists| | |
+| HIS-03 | Expense order | Add expenses | Correct order displayed| | |
+
+![before adding next expense order & list](documentation/before-add-next-expense.png)
+![after adding last expense - order](documentation/after-add-last-expense.png)
 
 ---
 
 ## 6. Remove Expense
 
-| Test Case ID | Test Scenario | Test Steps | Expected Result |
-|-------------|---------------|------------|----------------|
-| DEL-01 | Delete expense | Click delete | Expense removed|
-| DEL-02 | Update overview | Delete expense | Totals update|
-| DEL-03 | Delete last expense | Remove final item | Expense list empty|
+| Test Case ID | Test Scenario | Test Steps | Expected Result | Actual Result | Remarks |
+|-------------|---------------|------------|----------------|---------------|---------|
+| DEL-01 | Delete expense | Click remove | Expense removed| | |
+| DEL-02 | Update overview | Delete expense | Totals update| | |
+| DEL-03 | Delete last expense | Remove final item | Expense list empty| | |
+
+![before remove expenses](documentation/before-remove-expense.png)
+![after remove expenses ](documentation/after-use-remove-button.png)
+![after remove last expenses](documentation/add-expenses-overview.png)
 
 ---
 
 ## 7. Reset All Data
 
-| Test Case ID | Test Scenario | Test Steps | Expected Result |
-|-------------|---------------|------------|----------------|
-| RES-01 | Reset data | Click Reset | Budget and expenses cleared|
-| RES-02 | Persistence after reset | Refresh page | Data remains cleared|
-| RES-03 | Reset confirmation | Click Reset | Confirmation shown (if implemented)|
+| Test Case ID | Test Scenario | Test Steps | Expected Result | Actual Result | Remarks |
+|-------------|---------------|------------|----------------|---------------|---------|
+| RES-01 | Reset data | Click Reset | Budget and expenses cleared| | |
+| RES-02 | Persistence after reset | Refresh page | Data remains cleared| | |
+| RES-03 | Reset confirmation | Click Reset | Confirmation shown (if implemented)| | |
 
+![reset alert](documentation/reset-all-check.png)
+![reset confirmation](documentation/reset-all-confirm.png)
 ---
 
 ## 8. Data Persistence
 
-| Test Case ID | Test Scenario | Test Steps | Expected Result |
-|-------------|---------------|------------|----------------|
-| PER-01 | Auto-save | Add budget and expenses | Data saved automatically|
-| PER-02 | Reopen app | Close and reopen app | Data restored|
-| PER-03 | Currency persistence | Change currency → reload | Currency retained|
+| Test Case ID | Test Scenario | Test Steps | Expected Result | Actual Result | Remarks |
+|-------------|---------------|------------|----------------|---------------|---------|
+| PER-01 | Auto-save | Add budget and expenses | Data saved automatically| | |
+| PER-02 | Reopen app | Close and reopen app | Data restored| | |
+| PER-03 | Currency persistence | Change currency → reload | Currency retained| | |
+
+
 
 ---
 
 ## 9. Responsiveness Testing
 
-| Test Case ID | Device | Test Steps | Expected Result |
-|-------------|--------|------------|----------------|
-| RES-UI-01 | Desktop | Open app | Layout displays correctly|
-| RES-UI-02 | Tablet | Resize to tablet width | No overlap or cutoff|
-| RES-UI-03 | Mobile | Resize to mobile width | Readable stacked layout|
-| RES-UI-04 | Mobile interaction | Tap buttons | Buttons are clickable|
-| RES-UI-05 | Window resize | Resize browser | UI adjusts smoothly|
+| Test Case ID | Device | Test Steps | Expected Result | Actual Result | Remarks |
+|-------------|--------|------------|----------------|---------------|---------|
+| RES-UI-01 | Desktop | Open app | Layout displays correctly| | |
+| RES-UI-02 | Tablet | Resize to tablet width | No overlap or cutoff| | |
+| RES-UI-03 | Mobile | Resize to mobile width | Readable stacked layout| | |
+| RES-UI-04 | Mobile interaction | Tap buttons | Buttons are clickable| | |
+| RES-UI-05 | Window resize | Resize browser | UI adjusts smoothly| | |
