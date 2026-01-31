@@ -87,13 +87,13 @@ Given the project’s size, timeline, and objectives, manual testing provides a 
 
 ## 1. Currency Selection
 
-| Test Case ID | Test Scenario | Test Steps | Expected Result | Actual Result | Remarks |
-|-------------|---------------|------------|----------------|---------------|---------|
-| CUR-01 | Select GBP | Open app → Select GBP | All amounts display with £ | | |
-| CUR-02 | Select USD | Change currency to USD | All amounts display with $ | | |
-| CUR-03 | Select EUR | Change currency to EUR | All amounts display with € | | |
-| CUR-04 | Change currency after setting budget | Set budget → Switch currency | Numeric value unchanged, symbol updates | | |
-| CUR-05 | Currency persistence | Refresh page | Selected currency persists | | |
+| Test Case ID | Test Scenario | Test Steps | Expected Result | Remarks |
+|-------------|---------------|------------|----------------|---------------|
+| CUR-01 | Select GBP | Open app → Select GBP | All amounts should display with £ | PASS | 
+| CUR-02 | Select USD | Change currency to USD | All amounts should display with $ | PASS |
+| CUR-03 | Select EUR | Change currency to EUR | All amounts shoulddisplay with € | PASS |
+| CUR-04 | Change currency after setting budget | Set budget → Switch currency | Numeric value unchanged, symbol updates | PASS |
+| CUR-05 | Currency persistence | Refresh page | Selected currency persists | PASS |
 
 ![select pound as currency by default](documentation/select-pounds.png)
 ![select dollar as currency](documentation/select-dollar.png)
@@ -103,13 +103,13 @@ Given the project’s size, timeline, and objectives, manual testing provides a 
 
 ## 2. Set Budget
 
-| Test Case ID | Test Scenario | Test Steps | Expected Result | Actual Result | Remarks |
-|-------------|---------------|------------|----------------|---------------|---------|
-| BUD-01 | Set valid budget | Enter valid amount | Budget saved and displayed | | |
-| BUD-02 | Decimal budget | Enter 250.75 | Decimal accepted | | |
-| BUD-03 | Zero budget | Enter 0 | Validation error shown | | |
-| BUD-04 | Negative budget | Enter -100 | Budget not accepted | | |
-| BUD-05 | Update budget | Modify existing budget | Budget updates correctly | | |
+| Test Case ID | Test Scenario | Test Steps | Expected Result | Remarks |
+|-------------|---------------|------------|----------------|---------------|
+| BUD-01 | Set valid budget | Enter valid amount | Budget saved and displayed | PASS |
+| BUD-02 | Decimal budget | Enter 250.75 | Decimal accepted | PASS |
+| BUD-03 | Zero budget | Enter 0 | Validation error shown | PASS |
+| BUD-04 | Negative budget | Enter -100 | Budget not accepted | PASS |
+| BUD-05 | Update budget | Modify existing budget | Budget updates correctly | PASS |
 
 ![before add valid budget](documentation/before-add-budget.png)
 ![after add valid budget](documentation/confirm-add-budget.png)
@@ -122,13 +122,13 @@ Given the project’s size, timeline, and objectives, manual testing provides a 
 
 ## 3. Add Expense
 
-| Test Case ID | Test Scenario | Test Steps | Expected Result | Actual Result | Remarks |
-|-------------|---------------|------------|----------------|---------------|---------|
-| EXP-01 | Add valid expense | Enter title and amount | Expense added successfully | | |
-| EXP-02 | Empty title | Leave title blank | Validation error shown | | |
-| EXP-03 | Negative amount | Enter -50 | Expense not added | | |
-| EXP-04 | Expense exceeds budget | Add high expense | negative balance | | |
-| EXP-05 | Multiple expenses | Add several expenses | All displayed in history | | |
+| Test Case ID | Test Scenario | Test Steps | Expected Result | Remarks |
+|-------------|---------------|------------|----------------|---------------|
+| EXP-01 | Add valid expense | Enter title and amount | Expense added successfully | PASS |
+| EXP-02 | Empty title | Leave title blank | Validation error shown | PASS |
+| EXP-03 | Negative amount | Enter -50 | Expense not added | PASS |
+| EXP-04 | Expense exceeds budget | Add high expense | negative balance | PASS |
+| EXP-05 | Multiple expenses | Add several expenses | All displayed in history | PASS |
 
 ![add valid expense](documentation/add-valid-expense.png)
 ![add blank title expense](documentation/no-title-expense.png)
@@ -140,12 +140,12 @@ Given the project’s size, timeline, and objectives, manual testing provides a 
 
 ## 4. Budget Overview
 
-| Test Case ID | Test Scenario | Test Steps | Expected Result | Actual Result | Remarks |
-|-------------|---------------|------------|----------------|---------------|---------|
-| OVR-01 | Budget only | Set budget | Expenses = 0, remaining = budget| | |
-| OVR-02 | With expenses | Add expenses | Totals update correctly| | |
-| OVR-03 | After deletion | Delete an expense | Totals recalculate| | |
-| OVR-04 | Currency change | Switch currency | Currency symbols update| | |
+| Test Case ID | Test Scenario | Test Steps | Expected Result | Remarks |
+|-------------|---------------|------------|----------------|---------------|
+| OVR-01 | Budget only | Set budget | Expenses = 0, remaining = budget| PASS |
+| OVR-02 | With expenses | Add expenses | Totals update correctly| PASS |
+| OVR-03 | After deletion | Delete an expense | Totals recalculate| PASS |
+| OVR-04 | Currency change | Switch currency | Currency symbols update| PASS |
 
 ![add budget only overview](documentation/add-budget-only-overview.png)
 ![add budget expense overview](documentation/add-budget-expense-overview.png)
@@ -157,11 +157,11 @@ Given the project’s size, timeline, and objectives, manual testing provides a 
 
 ## 5. Expense History
 
-| Test Case ID | Test Scenario | Test Steps | Expected Result | Actual Result | Remarks |
-|-------------|---------------|------------|----------------|---------------|---------|
-| HIS-01 | View history | Add multiple expenses | All expenses listed| | |
-| HIS-02 | Persistence | Refresh page | History persists| | |
-| HIS-03 | Expense order | Add expenses | Correct order displayed| | |
+| Test Case ID | Test Scenario | Test Steps | Expected Result | Remarks |
+|-------------|---------------|------------|----------------|---------------|
+| HIS-01 | View history | Add multiple expenses | All expenses listed| PASS |
+| HIS-02 | Persistence | Refresh page | History persists| PASS |
+| HIS-03 | Expense order | Add expenses | Correct order displayed| PASS |
 
 ![before adding next expense order & list](documentation/before-add-next-expense.png)
 ![after adding last expense - order](documentation/after-add-last-expense.png)
@@ -170,11 +170,11 @@ Given the project’s size, timeline, and objectives, manual testing provides a 
 
 ## 6. Remove Expense
 
-| Test Case ID | Test Scenario | Test Steps | Expected Result | Actual Result | Remarks |
-|-------------|---------------|------------|----------------|---------------|---------|
-| DEL-01 | Delete expense | Click remove | Expense removed| | |
-| DEL-02 | Update overview | Delete expense | Totals update| | |
-| DEL-03 | Delete last expense | Remove final item | Expense list empty| | |
+| Test Case ID | Test Scenario | Test Steps | Expected Result | Remarks |
+|-------------|---------------|------------|----------------|---------------|
+| DEL-01 | Delete expense | Click remove | Expense removed| PASS |
+| DEL-02 | Update overview | Delete expense | Totals update| PASS |
+| DEL-03 | Delete last expense | Remove final item | Expense list empty| PASS |
 
 ![before remove expenses](documentation/before-remove-expense.png)
 ![after remove expenses ](documentation/after-use-remove-button.png)
@@ -184,11 +184,11 @@ Given the project’s size, timeline, and objectives, manual testing provides a 
 
 ## 7. Reset All Data
 
-| Test Case ID | Test Scenario | Test Steps | Expected Result | Actual Result | Remarks |
-|-------------|---------------|------------|----------------|---------------|---------|
-| RES-01 | Reset data | Click Reset | Budget and expenses cleared| | |
-| RES-02 | Persistence after reset | Refresh page | Data remains cleared| | |
-| RES-03 | Reset confirmation | Click Reset | Confirmation shown (if implemented)| | |
+| Test Case ID | Test Scenario | Test Steps | Expected Result | Remarks |
+|-------------|---------------|------------|----------------|---------------|
+| RES-01 | Reset data | Click Reset | Budget and expenses cleared| PASS |
+| RES-02 | Persistence after reset | Refresh page | Data remains cleared| PASS |
+| RES-03 | Reset confirmation | Click Reset | Confirmation shown (if implemented)| PASS |
 
 ![reset alert](documentation/reset-all-check.png)
 ![reset confirmation](documentation/reset-all-confirm.png)
@@ -196,11 +196,11 @@ Given the project’s size, timeline, and objectives, manual testing provides a 
 
 ## 8. Data Persistence
 
-| Test Case ID | Test Scenario | Test Steps | Expected Result | Actual Result | Remarks |
-|-------------|---------------|------------|----------------|---------------|---------|
-| PER-01 | Auto-save | Add budget and expenses | Data saved automatically| | |
-| PER-02 | Reopen app | Close and reopen app | Data restored| | |
-| PER-03 | Currency persistence | Change currency → reload | Currency retained| | |
+| Test Case ID | Test Scenario | Test Steps | Expected Result | Remarks |
+|-------------|---------------|------------|----------------|---------------|
+| PER-01 | Auto-save | Add budget and expenses | Data saved automatically| PASS |
+| PER-02 | Reopen app | Close and reopen app | Data restored| PASS |
+| PER-03 | Currency persistence | Change currency → reload | Currency retained| PASS |
 
 ![data percisitence](documentation/data-persistence.mp4)
 
@@ -208,13 +208,13 @@ Given the project’s size, timeline, and objectives, manual testing provides a 
 
 ## 9. Responsiveness Testing
 
-| Test Case ID | Device | Test Steps | Expected Result | Actual Result | Remarks |
-|-------------|--------|------------|----------------|---------------|---------|
-| RES-UI-01 | Desktop | Open app | Layout displays correctly| | |
-| RES-UI-02 | Tablet | Resize to tablet width | No overlap or cutoff| | |
-| RES-UI-03 | Mobile | Resize to mobile width | Readable stacked layout| | |
-| RES-UI-04 | Mobile interaction | Tap buttons | Buttons are clickable| | |
-| RES-UI-05 | Window resize | Resize browser | UI adjusts smoothly| | |
+| Test Case ID | Device | Test Steps | Expected Result | Remarks |
+|-------------|--------|------------|----------------|---------------|
+| RES-UI-01 | Desktop | Open app | Layout displays correctly| PASS |
+| RES-UI-02 | Tablet | Resize to tablet width | No overlap or cutoff| PASS |
+| RES-UI-03 | Mobile | Resize to mobile width | Readable stacked layout| PASS |
+| RES-UI-04 | Mobile interaction | Tap buttons | Buttons are clickable| PASS |
+| RES-UI-05 | Window resize | Resize browser | UI adjusts smoothly| PASS |
 
 ![desktop view](documentation/desktop-view.png)
 ![tablet view](documentation/tablet-view.png)
