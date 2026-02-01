@@ -229,3 +229,8 @@ Given the project’s size, timeline, and objectives, manual testing provides a 
   No error or warnings were found when index.html was passed through the official W3C validator
 
   ![HTML Validation](documentation/images/html-validation.png)
+
+   ### CSS
+  No errors found, but a few warnings were found when style.css was passed through the official W3C (Jigsaw) validator.
+    
+  ![CSS Validator errors](documentation/images/css-validation.mp4)
