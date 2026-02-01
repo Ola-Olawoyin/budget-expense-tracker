@@ -221,3 +221,11 @@ Given the project’s size, timeline, and objectives, manual testing provides a 
 ![mobile views](documentation/images/mobile-views.png)
 ![mobile interaction](documentation/images/mobile-interaction.mp4)
 ![browser resize](documentation/images/resize-browser.mp4)
+
+---
+
+## Validator Testing
+  ### HTML
+  No error or warnings were found when index.html was passed through the official W3C validator
+
+  ![HTML Validation](documentation/images/html-validation.png)
