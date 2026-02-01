@@ -233,4 +233,12 @@ Given the project’s size, timeline, and objectives, manual testing provides a 
    ### CSS
   No errors found, but a few warnings were found when style.css was passed through the official W3C (Jigsaw) validator.
     
-  ![CSS Validator errors](documentation/images/css-validation.mp4)
+  ![CSS Validation](documentation/images/css-validation.mp4)
+  ![CSS warnings](documentation/images/css-warnings.png)
+
+
+## Lighthouse report
+
+  - Using lighthouse in devtools i confirmed that the website is perfroming well, and accessible, colours and fonts chosen are contrasting and readable
+  
+  ![Lighthouse Report](documentation/images/lighthouse-report.png)
