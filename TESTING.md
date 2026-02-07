@@ -242,3 +242,29 @@ Given the project’s size, timeline, and objectives, manual testing provides a 
   - Using lighthouse in devtools i confirmed that the website is perfroming well, and accessible, colours and fonts chosen are contrasting and readable
   
   ![Lighthouse Report](documentation/images/lighthouse-report.png)
+
+
+## Bugs
+
++ ### Solved bugs
+   
+       
+    1. Budget form submission triggering expense validation and the expense form completely broken
+        
+        *Solution:* Corrected the wrong use of 'add-budget-container form' class by replacing it with the right class - 'add-expense-container form'
+    2. 'Budget left' math error from parsing the 'total budget' without 'total expense'
+       
+        *Solution:* Subtract 'budgetData.totalExpenses' from 'budgetAmount'
+    3. Typo errors - typing 'budgetData.expense' instead of the 'budgetData.expenses' causing a failure in adding expense
+       
+        *Solution:* Corrected the typo error to fix the bug
+    4. Validation errors in HTML document with trailing '/'
+    
+        *Solutions:* Remove the the trailing '/'.
+    5. Validation errors in CSS style with unneccessary '0' padding
+        *Solutions:* Remove the the padding '0'
+    
+    
+
++ ### Unsolved bugs
+    - When user adds some expenses without addding budget and then remove the expense, the 'budget left' in the overview shows -0.00
