@@ -95,9 +95,9 @@ Given the project’s size, timeline, and objectives, manual testing provides a 
 | CUR-04 | Change currency after setting budget | Set budget → Switch currency | Numeric value unchanged, symbol updates | PASS |
 | CUR-05 | Currency persistence | Refresh page | Selected currency persists | PASS |
 
-![select pound as currency by default](documentation/images/select-pounds.png)
-![select dollar as currency](documentation/images/select-dollar.png)
-![select euro as currency](documentation/images/select-euro.png)
+![select pound as currency by default](assets/documentation/images/select-pounds.png)
+![select dollar as currency](assets/documentation/images/select-dollar.png)
+![select euro as currency](assets/documentation/images/select-euro.png)
 
 ---
 
@@ -111,13 +111,13 @@ Given the project’s size, timeline, and objectives, manual testing provides a 
 | BUD-04 | Negative budget | Enter -100 | Budget not accepted | PASS |
 | BUD-05 | Update budget | Modify existing budget | Budget updates correctly | PASS |
 
-![before add valid budget](documentation/images/before-add-budget.png)
-![after add valid budget](documentation/images/confirm-add-budget.png)
-![add decimal budget](documentation/images/add-decimal-budget.png)
-![before add zero budget](documentation/images/add-zero-budget.png.png)
-![add negative budget](documentation/images/add-negative-budget.png)
-![before modify budget](documentation/images/before-modify-budget.png)
-![after modify budget](documentation/images/after-modify-budget.png)
+![before add valid budget](assets/documentation/images/before-add-budget.png)
+![after add valid budget](assets/documentation/images/confirm-add-budget.png)
+![add decimal budget](assets/documentation/images/add-decimal-budget.png)
+![before add zero budget](assets/documentation/images/add-zero-budget.png.png)
+![add negative budget](assets/documentation/images/add-negative-budget.png)
+![before modify budget](assets/documentation/images/before-modify-budget.png)
+![after modify budget](assets/documentation/images/after-modify-budget.png)
 ---
 
 ## 3. Add Expense
@@ -130,11 +130,11 @@ Given the project’s size, timeline, and objectives, manual testing provides a 
 | EXP-04 | Expense exceeds budget | Add high expense | negative balance | PASS |
 | EXP-05 | Multiple expenses | Add several expenses | All displayed in history | PASS |
 
-![add valid expense](documentation/images/add-valid-expense.png)
-![add blank title expense](documentation/images/no-title-expense.png)
-![add negative expense](documentation/images/add-negative-expense.png)
-![add high expense](documentation/images/add-high-expense.png)
-![add multiple expenses](documentation/images/add-multiple-expense.png)
+![add valid expense](assets/documentation/images/add-valid-expense.png)
+![add blank title expense](assets/documentation/images/no-title-expense.png)
+![add negative expense](assets/documentation/images/add-negative-expense.png)
+![add high expense](assets/documentation/images/add-high-expense.png)
+![add multiple expenses](assets/documentation/images/add-multiple-expense.png)
 
 ---
 
@@ -147,11 +147,11 @@ Given the project’s size, timeline, and objectives, manual testing provides a 
 | OVR-03 | After deletion | Delete an expense | Totals recalculate| PASS |
 | OVR-04 | Currency change | Switch currency | Currency symbols update| PASS |
 
-![add budget only overview](documentation/images/add-budget-only-overview.png)
-![add budget expense overview](documentation/images/add-budget-expense-overview.png)
-![before remove expenses overview](documentation/images/add-expenses-overview.png)
-![after remove expenses overview](documentation/images/remove-expense-overview.png)
-![switch currency overview](documentation/images/switch-currency-overview.png)
+![add budget only overview](assets/documentation/images/add-budget-only-overview.png)
+![add budget expense overview](assets/documentation/images/add-budget-expense-overview.png)
+![before remove expenses overview](assets/documentation/images/add-expenses-overview.png)
+![after remove expenses overview](assets/documentation/images/remove-expense-overview.png)
+![switch currency overview](assets/documentation/images/switch-currency-overview.png)
 
 ---
 
@@ -163,8 +163,8 @@ Given the project’s size, timeline, and objectives, manual testing provides a 
 | HIS-02 | Persistence | Refresh page | History persists| PASS |
 | HIS-03 | Expense order | Add expenses | Correct order displayed| PASS |
 
-![before adding next expense order & list](documentation/images/before-add-next-expense.png)
-![after adding last expense - order](documentation/images/after-add-last-expense.png)
+![before adding next expense order & list](assets/documentation/images/before-add-next-expense.png)
+![after adding last expense - order](assets/documentation/images/after-add-last-expense.png)
 
 ---
 
@@ -176,9 +176,9 @@ Given the project’s size, timeline, and objectives, manual testing provides a 
 | DEL-02 | Update overview | Delete expense | Totals update| PASS |
 | DEL-03 | Delete last expense | Remove final item | Expense list empty| PASS |
 
-![before remove expenses](documentation/images/before-remove-expense.png)
-![after remove expenses ](documentation/images/after-use-remove-button.png)
-![after remove last expenses](documentation/images/add-expenses-overview.png)
+![before remove expenses](assets/documentation/images/before-remove-expense.png)
+![after remove expenses ](assets/documentation/images/after-use-remove-button.png)
+![after remove last expenses](assets/documentation/images/add-expenses-overview.png)
 
 ---
 
@@ -190,8 +190,8 @@ Given the project’s size, timeline, and objectives, manual testing provides a 
 | RES-02 | Persistence after reset | Refresh page | Data remains cleared| PASS |
 | RES-03 | Reset confirmation | Click Reset | Confirmation shown (if implemented)| PASS |
 
-![reset alert](documentation/images/reset-all-check.png)
-![reset confirmation](documentation/images/reset-all-confirm.png)
+![reset alert](assets/documentation/images/reset-all-check.png)
+![reset confirmation](assets/documentation/images/reset-all-confirm.png)
 ---
 
 ## 8. Data Persistence
@@ -202,7 +202,7 @@ Given the project’s size, timeline, and objectives, manual testing provides a 
 | PER-02 | Reopen app | Close and reopen app | Data restored| PASS |
 | PER-03 | Currency persistence | Change currency → reload | Currency retained| PASS |
 
-![data percisitence](documentation/images/data-persistence.mp4)
+![data percisitence](assets/documentation/images/data-persistence.mp4)
 
 ---
 
@@ -216,11 +216,11 @@ Given the project’s size, timeline, and objectives, manual testing provides a 
 | RES-UI-04 | Mobile interaction | Tap buttons | Buttons are clickable| PASS |
 | RES-UI-05 | Window resize | Resize browser | UI adjusts smoothly| PASS |
 
-![desktop view](documentation/images/desktop-view.png)
-![tablet view](documentation/images/tablet-view.png)
-![mobile views](documentation/images/mobile-views.png)
-![mobile interaction](documentation/images/mobile-interaction.mp4)
-![browser resize](documentation/images/resize-browser.mp4)
+![desktop view](assets/documentation/images/desktop-view.png)
+![tablet view](assets/documentation/images/tablet-view.png)
+![mobile views](assets/documentation/images/mobile-views.png)
+![mobile interaction](assets/documentation/images/mobile-interaction.mp4)
+![browser resize](assets/documentation/images/resize-browser.mp4)
 
 ---
 
@@ -228,20 +228,20 @@ Given the project’s size, timeline, and objectives, manual testing provides a 
   ### HTML
   No error or warnings were found when index.html was passed through the official W3C validator
 
-  ![HTML Validation](documentation/images/html-validation.png)
+  ![HTML Validation](assets/documentation/images/html-validation.png)
 
    ### CSS
   No errors found, but a few warnings were found when style.css was passed through the official W3C (Jigsaw) validator.
     
-  ![CSS Validation](documentation/images/css-validation.mp4)
-  ![CSS warnings](documentation/images/css-warnings.png)
+  ![CSS Validation](assets/documentation/images/css-validation.mp4)
+  ![CSS warnings](assets/documentation/images/css-warnings.png)
 
 
 ## Lighthouse report
 
   - Using lighthouse in devtools i confirmed that the website is perfroming well, and accessible, colours and fonts chosen are contrasting and readable
   
-  ![Lighthouse Report](documentation/images/lighthouse-report.png)
+  ![Lighthouse Report](assets/documentation/images/lighthouse-report.png)
 
 
 ## Bugs

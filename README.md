@@ -3,7 +3,7 @@ Budget Expense Tracker is a simple, responsive web application for managing pers
 
 This site can be accessed by this [link](https://ola-olawoyin.github.io/budget-expense-tracker/)
 
-![Responsive Mockup](documentation/images/responsive-views.png)
+![Responsive Mockup](assets/documentation/images/responsive-views.png)
 
 
 ## Project Goals:
@@ -92,7 +92,7 @@ So that I don't lose my information when I close and reopen the application.
 
 ### Color Scheme
 
-![Color pallet](documentation/images/colour-palette.png)
+![Color pallet](assets/documentation/images/colour-palette.png)
 
 - Light Blue Gradient was used as the main background color of the website to create a calm, clean, and friendly atmosphere. The soft gradient adds depth without overwhelming the user, promoting focus and ease of use.
 
@@ -130,7 +130,7 @@ In your IDE Terminal, type the following command to clone my repository:
 
 #### Desktop devices
 
- ![Desktop Screen](documentation/images/desktop-wireframe.png)
+ ![Desktop Screen](assets/documentation/images/desktop-wireframe.png)
 
 ---
 
