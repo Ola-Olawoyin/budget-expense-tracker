@@ -91,7 +91,7 @@ Given the project’s size, timeline, and objectives, manual testing provides a 
 |-------------|---------------|------------|----------------|---------------|
 | CUR-01 | Select GBP | Open app → Select GBP | All amounts should display with £ | PASS | 
 | CUR-02 | Select USD | Change currency to USD | All amounts should display with $ | PASS |
-| CUR-03 | Select EUR | Change currency to EUR | All amounts shoulddisplay with € | PASS |
+| CUR-03 | Select EUR | Change currency to EUR | All amounts should display with € | PASS |
 | CUR-04 | Change currency after setting budget | Set budget → Switch currency | Numeric value unchanged, symbol updates | PASS |
 | CUR-05 | Currency persistence | Refresh page | Selected currency persists | PASS |
 
@@ -118,6 +118,7 @@ Given the project’s size, timeline, and objectives, manual testing provides a 
 ![add negative budget](assets/documentation/images/add-negative-budget.png)
 ![before modify budget](assets/documentation/images/before-modify-budget.png)
 ![after modify budget](assets/documentation/images/after-modify-budget.png)
+
 ---
 
 ## 3. Add Expense
@@ -142,7 +143,7 @@ Given the project’s size, timeline, and objectives, manual testing provides a 
 
 | Test Case ID | Test Scenario | Test Steps | Expected Result | Remarks |
 |-------------|---------------|------------|----------------|---------------|
-| OVR-01 | Budget only | Set budget | Expenses = 0, remaining = budget| PASS |
+| OVR-01 | Budget only | Set budget | Expenses = 0, budget left = budget| PASS |
 | OVR-02 | With expenses | Add expenses | Totals update correctly| PASS |
 | OVR-03 | After deletion | Delete an expense | Totals recalculate| PASS |
 | OVR-04 | Currency change | Switch currency | Currency symbols update| PASS |
