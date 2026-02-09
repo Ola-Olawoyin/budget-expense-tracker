@@ -114,7 +114,7 @@ Given the project’s size, timeline, and objectives, manual testing provides a 
 ![before add valid budget](assets/documentation/images/before-add-budget.png)
 ![after add valid budget](assets/documentation/images/confirm-add-budget.png)
 ![add decimal budget](assets/documentation/images/add-decimal-budget.png)
-![before add zero budget](assets/documentation/images/add-zero-budget.png.png)
+![before add zero budget](assets/documentation/images/add-zero-budget.png)
 ![add negative budget](assets/documentation/images/add-negative-budget.png)
 ![before modify budget](assets/documentation/images/before-modify-budget.png)
 ![after modify budget](assets/documentation/images/after-modify-budget.png)
@@ -202,7 +202,7 @@ Given the project’s size, timeline, and objectives, manual testing provides a 
 | PER-02 | Reopen app | Close and reopen app | Data restored| PASS |
 | PER-03 | Currency persistence | Change currency → reload | Currency retained| PASS |
 
-![data percisitence](assets/documentation/images/data-persistence.mp4)
+![data persisitence](assets/documentation/images/data-persistence.mp4)
 
 ---
 
@@ -268,3 +268,4 @@ Given the project’s size, timeline, and objectives, manual testing provides a 
 
 + ### Unsolved bugs
     - When user adds some expenses without addding budget and then remove the expense, the 'budget left' in the overview shows -0.00
+    [Unresolved bug](assets/documentation/images/unresolved-bug.png)
