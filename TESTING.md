@@ -203,7 +203,7 @@ Given the project’s size, timeline, and objectives, manual testing provides a 
 | PER-02 | Reopen app | Close and reopen app | Data restored| PASS |
 | PER-03 | Currency persistence | Change currency → reload | Currency retained| PASS |
 
-![data persisitence](assets/documentation/images/data-persistence.mp4)
+![data persisitence](assets/documentation/images/data-persistence.gif)
 
 ---
 
@@ -220,8 +220,8 @@ Given the project’s size, timeline, and objectives, manual testing provides a 
 ![desktop view](assets/documentation/images/desktop-view.png)
 ![tablet view](assets/documentation/images/tablet-view.png)
 ![mobile views](assets/documentation/images/mobile-views.png)
-![mobile interaction](assets/documentation/images/mobile-interaction.mp4)
-![browser resize](assets/documentation/images/resize-browser.mp4)
+![mobile interaction](assets/documentation/images/mobile-interaction.gif)
+![browser resize](assets/documentation/images/resize-browser.gif)
 
 ---
 
@@ -234,7 +234,7 @@ Given the project’s size, timeline, and objectives, manual testing provides a 
    ### CSS
   No errors found, but a few warnings were found when style.css was passed through the official W3C (Jigsaw) validator.
     
-  ![CSS Validation](assets/documentation/images/css-validation.mp4)
+  ![CSS Validation](assets/documentation/images/css-validation.gif)
   ![CSS warnings](assets/documentation/images/css-warnings.png)
 
 
