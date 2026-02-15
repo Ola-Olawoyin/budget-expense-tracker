@@ -60,6 +60,7 @@ function updateLocalStorage() {
 }
 
 //Reset all budget data
+/* exported resetAll */
 function resetAll() {
     if (confirm('Are you sure you want to reset all data? This action cannot be undone.')) {
         //Clear all data
