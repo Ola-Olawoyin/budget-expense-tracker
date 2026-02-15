@@ -127,8 +127,13 @@ In your IDE Terminal, type the following command to clone my repository:
 ## Wireframe
 
 #### Desktop devices
-
  ![Desktop Screen](assets/documentation/images/desktop-wireframe.png)
+
+#### Tablet devices
+ ![Tablet Screen](assets/documentation/images/tablet-wireframe.png)
+
+#### Mobile devices
+ ![Mobile Screen](assets/documentation/images/mobile-wireframe.png)
 
 ---
 
