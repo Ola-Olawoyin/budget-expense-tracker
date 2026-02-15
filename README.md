@@ -87,11 +87,9 @@ So that I don't lose my information when I close and reopen the application.
 
 ---
 
-
 ## Design
 
 ### Color Scheme
-
 ![Color pallet](assets/documentation/images/colour-palette.png)
 
 - Light Blue Gradient was used as the main background color of the website to create a calm, clean, and friendly atmosphere. The soft gradient adds depth without overwhelming the user, promoting focus and ease of use.
