@@ -142,7 +142,8 @@ In your IDE Terminal, type the following command to clone my repository:
 + #### Tools     
     - VSCode as source-code editor for HTML and CSS code
     - [Compress JPEG](https://compressjpeg.com/) was used to compress JPEG images.
-    - [Wireframe for Desktop](https://balsamiq.com/wireframes/desktop) was used to design the project wireframes
+    - [Balsamiq Wireframe](https://balsamiq.com) was used to design the project wireframes
+    - [Screen to Gif](https://www.screentogif.com/) was used to convert video files to gif format
     - [coolors](https://coolors.co/) was used to create the color palette.
   
 
