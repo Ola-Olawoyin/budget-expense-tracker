@@ -1,3 +1,4 @@
+![Screen Display](assets/documentation/images/im-i-responsive.png)
 # *Budget Expense Tracker*
 Budget Expense Tracker is a simple, responsive web application for managing personal finances. It allows users to set a budget, log expenses, remove expense, track spending and view remaining balance at a glance. The app supports multiple currencies and view remaining balance at a glance. The app supports multiple currencies, provides an expense history with remove action, and focuses on clarity and ease of use through a clean, intuitive interface.
 

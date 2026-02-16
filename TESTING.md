@@ -242,6 +242,11 @@ Given the project’s size, timeline, and objectives, manual testing provides a 
 
   ![HTML Validation](assets/documentation/images/js-validation.png)
 
+## Accessibility report
+
+  - Using WAVE Web Accessibity Evaluation too i confirmed that the website is accessible, colours and fonts chosen are contrasting and readable. 
+
+  ![Accessibility Test](assets/documentation/images/accessibilty-test.png)
 
 
 ## Lighthouse report
