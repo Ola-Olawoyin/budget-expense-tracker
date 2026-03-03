@@ -82,8 +82,9 @@ Manual testing allows for quicker validation of features, flexibility in explori
 
 Given the project’s size, timeline, and objectives, manual testing provides a practical and efficient approach to ensuring quality while keeping development and testing costs realistic.
 
+# Test User Story
 
-# Manual Test Cases – Budget Expense Tracker
+## Manual Test Cases – Budget Expense Tracker
 
 ## 1. Currency Selection
 
