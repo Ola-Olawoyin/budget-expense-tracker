@@ -237,8 +237,8 @@ Given the project’s size, timeline, and objectives, manual testing provides a 
   ![CSS Validation](assets/documentation/images/css-validation.gif)
   ![CSS warnings](assets/documentation/images/css-warnings.png)
 
-   ### JS
-  No error were found but 19 warnings were found when script.js when passed through the jshint validator
+   ### JavaScript
+  No error were found but 13 warnings were found when script.js when passed through the jshint validator
 
   ![HTML Validation](assets/documentation/images/js-validation.png)
 
